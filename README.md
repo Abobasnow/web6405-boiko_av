@@ -68,4 +68,4 @@ Cercavo amore e alla fine mi ero illusa fossi te\
 ## Ссылки
 
 Проект в папке [lab4](./lab4/).
->>>>>>> Stashed changes
+

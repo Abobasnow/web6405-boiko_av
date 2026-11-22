@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мир богомолов — Сотрудничество с нами</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <h1 class="site-header__title">Мир богомолов</h1>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a href="index.html" class="main-nav__link">Главная</a></li>
+          <li class="main-nav__item"><a href="types.html" class="main-nav__link">Виды</a></li>
+          <li class="main-nav__item"><a href="gallery.html" class="main-nav__link">Галерея</a></li>
+          <li class="main-nav__item"><a href="care.html" class="main-nav__link">Содержание</a></li>
+          <li class="main-nav__item"><a href="exhibitions.html" class="main-nav__link">Выставки</a></li>
+          <li class="main-nav__item"><a href="form.html" class="main-nav__link main-nav__link--active">Сотрудничество</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <form class="form" novalidate>
+      <h2 class="form__title">Сотрудничество с нами</h2>
+
+      <div class="form__field">
+        <label class="form__label" for="name">Ваше имя</label>
+        <input class="form__input" type="text" id="name" name="name"
+               placeholder="Как к Вам обращаться?" autocomplete="name" required>
+        <span class="form__error" aria-live="polite"></span>
+      </div>
+
+      <div class="form__field">
+        <label class="form__label" for="email">Email</label>
+        <input class="form__input" type="email" id="email" name="email"
+               placeholder="you@example.com" autocomplete="email" required>
+        <span class="form__error" aria-live="polite"></span>
+      </div>
+
+
+      <div class="form__field">
+        <label class="form__label" for="cooperationType">Тип сотрудничества</label>
+        <select class="form__select" id="cooperationType" name="cooperationType">
+          <option value="photo">Предложить фото</option>
+          <option value="article">Написать статью</option>
+          <option value="exhibition">Организовать выставку</option>
+          <option value="other">Другое</option>
+        </select>
+        <span class="form__error"></span>
+      </div>
+
+      <div class="form__field">
+        <span class="form__label">Опыт содержания</span>
+        <div class="form__radio-group">
+          <label class="form__radio">
+            <input type="radio" name="experience" value="novice" checked>
+            Новичок
+          </label>
+          <label class="form__radio">
+            <input type="radio" name="experience" value="middle">
+            Средний
+          </label>
+          <label class="form__radio">
+            <input type="radio" name="experience" value="expert">
+            Опытный
+          </label>
+        </div>
+      </div>
+
+      <div class="form__field">
+        <label class="form__label" for="comment">Комментарий</label>
+        <textarea class="form__textarea" id="comment" name="comment"
+                  placeholder="Расскажите о Вашей идее (Минимум 20 символов)"></textarea>
+        <span class="form__error" aria-live="polite"></span>
+      </div>
+
+      <div class="form__field">
+        <label class="form__checkbox">
+          <input type="checkbox" id="agreement" name="agreement" required>
+          Согласен на обработку персональных данных
+        </label>
+        <span class="form__error" aria-live="polite"></span>
+      </div>
+
+      <button class="form__submit" type="submit">Отправить данные</button>
+
+      <div class="form__message" role="status" aria-live="polite"></div>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p>&copy; 2026 Мир богомолов. Все права защищены.</p>
+      <p><a href="index.html">На главную</a></p>
+    </div>
+  </footer>
+
+  <script src="js/form.js"></script>
+</body>
+</html>

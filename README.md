@@ -28,7 +28,6 @@ Cercavo amore e alla fine mi ero illusa fossi te\
 
 Проект находится в папке [lab2](./lab2/).
 
-
 # Лабораторная работа №3
 
 **Тема:** Основы JavaScript.
@@ -69,3 +68,4 @@ Cercavo amore e alla fine mi ero illusa fossi te\
 ## Ссылки
 
 Проект в папке [lab4](./lab4/).
+
